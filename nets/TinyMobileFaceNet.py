@@ -294,7 +294,7 @@ def mobilenet_v2_arg_scope(is_training=True,
       # force in-place updates of mean and variance estimates
       'updates_collections': None,
       # Moving averages ends up in the trainable variables collection
-      'variables_collections': [ tf.GraphKeys.TRAINABLE_VARIABLES ],
+      # 'variables_collections': [ tf.GraphKeys.TRAINABLE_VARIABLES ],
   }
 
   # Set weight_decay for weights in Conv and InvResBlock layers.
